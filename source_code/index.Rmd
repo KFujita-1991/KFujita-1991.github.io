@@ -1,8 +1,11 @@
 ---
 title: "home"
+output:
+  html_document:
+    css: "style.css"
+    self_contained: no
 ---
 
-----
 
 はじめまして。  
 

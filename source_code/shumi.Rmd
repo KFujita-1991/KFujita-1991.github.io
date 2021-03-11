@@ -1,8 +1,10 @@
 ---
 title: "趣味"
+output:
+  html_document:
+    css: "style.css"
+    self_contained: no
 ---
-
-----
 
 
 趣味は漫画とゲーム  

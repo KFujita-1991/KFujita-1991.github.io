@@ -1,8 +1,10 @@
 ---
 title: "学歴と職歴"
+output:
+  html_document:
+    css: "style.css"
+    self_contained: no
 ---
-
-----
 
 
 - 学歴
