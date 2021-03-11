@@ -1,8 +1,0 @@
-name: "サイトタイトル"
-navbar: 
-  title: "KFujita-1991"
-  left:
-    - text: "Introduction"
-      href: index.html
-    - text: "Hobby"
-      href: shumi.html
