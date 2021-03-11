@@ -6,4 +6,6 @@ navbar:
       href: index.html
     - text: "趣味"
       href: shumi.html
+    - text: "経歴"
+      href: gakureki.html
 output_dir: "docs"
