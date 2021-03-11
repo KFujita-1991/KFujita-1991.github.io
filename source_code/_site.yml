@@ -1,6 +1,6 @@
 name: "サイトタイトル"
 navbar: 
-  title: "My ウェブサイト"
+  title: "KFujita-1991のウェブサイト"
   left:
     - text: "ホーム"
       href: index.html
