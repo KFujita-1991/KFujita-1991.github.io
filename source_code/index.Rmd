@@ -6,6 +6,9 @@ output:
     self_contained: no
 ---
 
+![aset1.png](./graphic/aset1.png)
+
+
 ## 自己紹介
 はじめまして。  
 名古屋の理学療法士・研究者です。  
