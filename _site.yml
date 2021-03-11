@@ -1,8 +1,8 @@
 name: "サイトタイトル"
 navbar: 
-  title: "My ウェブサイト"
+  title: "KFujita-1991"
   left:
-    - text: "ホーム"
+    - text: "Introduction"
       href: index.html
-    - text: "趣味"
+    - text: "Hobby"
       href: shumi.html
