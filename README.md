@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to my web site
+
+I am KFujita-1991.
 
 You can use the [editor on GitHub](https://github.com/KFujita-1991/KFujita-1991.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
