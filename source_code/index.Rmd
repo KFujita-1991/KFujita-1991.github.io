@@ -23,9 +23,3 @@ output:
 I am PhD student of <I>Nagoya University Graduate School of Medicine</I>, Nagoya, Japan.  
 I work in reserch team of communyty healthcare.  
 Key words: Geriatrics, Rehabilitaion, Fall, Dementia  
-
-Here are some ideas to get you started:
-
-- I currently working on Nagoya university.
-- I currently learning geriatric medicine/rehabilitation.
-  My researvh interest is fall prevention of community-dwelling older adults.
