@@ -22,4 +22,4 @@ output:
 ## Introduction
 I am PhD student of <I>Nagoya University Graduate School of Medicine</I>, Nagoya, Japan.  
 I work in reserch team of communyty healthcare.  
-Key words: Geriatrics, Rehabilitaion, Fall, Dementia  
+Key words: Geriatrics, Rehabilitaion, Fall, Dementia
