@@ -13,12 +13,22 @@
 
 <title>研究</title>
 
+<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -33,11 +43,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -50,32 +55,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -87,10 +66,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -107,40 +82,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -168,7 +116,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -180,7 +128,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -191,10 +139,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -206,7 +167,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -302,7 +262,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -324,6 +284,7 @@ $(document).ready(function () {
 </ol></li>
 <li>国際雑誌（共著・査読あり）
 <ol style="list-style-type: decimal">
+<li><p>Masaaki Nagae, Hiroyuki Umegaki, Akito Yoshiko, <B><U>Kosuke Fujita</U></B>, Hitoshi Komiya, Kazuhisa Watanabe, Yosuke Yamada, Masafumi Kuzuya; Echo intensity is more useful in predicting hospital-associated complications than conventional sarcopenia-related parameters in acute hospitalized older patients. Exp Gerontol. 2021 Jul 15; 150:111397.</p></li>
 <li><p>Sayaka Nakao, Tome Ikezoe, Masatoshi Nakamura, Hiroki Umegaki, <B><U>Kosuke Fujita</U></B>, Jun Umehara, Takuya Kobayashi, Satoko Ibuki, Noriaki Ichihashi; Chronic Effects of a Static Stretching Program on Hamstring Strength. J Strength Cond Res. 2019 Jan 23. doi: <a href="https://journals.lww.com/nsca-jscr/Abstract/9000/Chronic_Effects_of_a_Static_Stretching_Program_on.94986.aspx">10.1519/JSC.0000000000003037.</a></p></li>
 <li><p>Junya Saeki, Masatoshi Nakamura, Sayaka Nakao, <B><U>Kosuke Fujita</U></B>, Ko Yanase, Katsuyuki Morishita, Noriaki Ichihashi; Ankle and toe muscle strength characteristics in runners with a history of medial tibial stress syndrome. J Foot Ankle Res. 2017 Apr 11;10:16. doi: <a href="https://jfootankleres.biomedcentral.com/articles/10.1186/s13047-017-0197-2">10.1186/s13047-017-0197-2.</a></p></li>
 <li><p>Ko Yanase, Satoshi Hasegawa, Masatoshi Nakamura, Taishi Yamauchi, Satoru Nishishita, Kojiro Araki, Jun Umehara, <B><U>Kosuke Fujita</U></B>, Ikuya Sato, Satoko Ibuki, Noriaki Ichihashi; Electrical Stimulation to the Infraspinatus on Hypertrophy and Strength of the Shoulder. Int J Sports Med. 2018 Oct;39(11):828-834. doi: <a href="https://www.thieme-connect.de/products/ejournals/abstract/10.1055/s-0044-102129">10.1055/s-0044-102129.</a></p></li>
@@ -352,10 +313,11 @@ $(document).ready(function () {
 <li></li>
 <li></li>
 </ol></li>
-<li>国内会議
+<li>国内学会
 <ol style="list-style-type: decimal">
 <li>藤田 康介, 梅垣 宏行, 黄 継賢, 井上 愛子, 宇野 千晴, 葛谷 雅文; ベースラインでサルコペニアを有する高齢者は運動介入に対する治療反応性が乏しいのか?　TOPICS trialのsubgroup解析による検討. 第62回日本老年医学会学術集会. web開催. 2020年8月</li>
 <li>藤田 康介, 井上 愛子, 宇野 千晴, 黄 継賢, 梅垣 宏行, 大西 丈二, 葛谷 雅文; 地域在住高齢者における、放送メディアを活用した非監視下プログラムの効果　名古屋大学TENG-projectより. 第30回日本老年医学会東海地方会. 名古屋. 2019年10月</li>
+<li>藤田 康介, 田中 伸弥, 加古 誠人, 柴田 篤志, 中嶋 宏貴, 西田 佳宏, 葛谷 雅文; Short Physical Performance Batteryは75歳以上の入院期高齢患者の生命予後予測に有用である. 第61回日本老年医学会学術集会. 仙台. 2019年6月</li>
 </ol></li>
 </ul>
 <hr />
@@ -405,7 +367,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
