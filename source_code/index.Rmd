@@ -1,25 +1,25 @@
 ---
-title: "home"
+title: "home page"
 output:
   html_document:
     css: "style.css"
     self_contained: no
 ---
 
-![aset1.png](./graphic/aset1.png)
-
+![](./graphic/cover.jpg)
 
 ## 自己紹介
-はじめまして。  
-名古屋の理学療法士・研究者です。  
-まだアップロードするレベルのサイトではありませんが、  
+
+はじめまして。\
+愛知県に在住の理学療法士・研究者です。\
+リハビリテーション、バイオメカニクスや高齢者医療、公衆衛生の研究をしています。\
+まだアップロードするレベルのサイトではありませんが、\
 練習しながら少しずつ整えていきたいと思っています。
 
-
-----
-
+------------------------------------------------------------------------
 
 ## Introduction
-I am PhD student of <I>Nagoya University Graduate School of Medicine</I>, Nagoya, Japan.  
-I work in reserch team of communyty healthcare.  
+
+I am PhD student of <I>Nagoya University Graduate School of Medicine</I>, Nagoya, Japan.\
+I work in reserch team of communyty healthcare.\
 Key words: Geriatrics, Rehabilitaion, Fall, Dementia

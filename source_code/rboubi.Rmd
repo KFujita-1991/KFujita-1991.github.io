@@ -10,12 +10,27 @@ output:
 
 ### 変数操作系
 
-1. gather
-1. with
-
+1.  gather
+2.  with
 
 ### データ可視化
+
+1.  デフォルトの可視化関数
+2.  ggplot
+3.  ggThemeAssist
+
+### 統計解析
+
+1. glm
+1. glmm
+1. gee
 
 
 ### Pythonとの連携
 
+RとPythonの垣根は無くなってきているようですが、まだまだ\
+R...統計解析\
+Python...機械学習\
+という住み分けはあるようです。
+
+1. condaのインストール

@@ -15,4 +15,6 @@ navbar:
       menu:
         - text: "変数操作系"
           href: hennsuusousa.html
+        - text: "データ可視化"
+          href: datakashika.html
 output_dir: "../docs"
