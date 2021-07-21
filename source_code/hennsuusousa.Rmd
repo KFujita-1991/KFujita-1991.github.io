@@ -1,0 +1,13 @@
+---
+title: "変数操作系"
+output:
+  html_document:
+    css: "style.css"
+    self_contained: no
+---
+
+# aa
+
+## aaa
+
+# bb
