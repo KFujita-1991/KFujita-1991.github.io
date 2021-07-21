@@ -4,4 +4,36 @@ output:
   html_document:
     css: "style.css"
     self_contained: no
+    toc: true
+    toc_depth: 5
 ---
+
+## ggplot
+
+### irisのデータの確認
+
+```{r}
+head(iris)
+summary(iris)
+```
+3種類の花を50個体ずつ確認し、4つの特徴量についてまとめたデータ。
+
+
+### 基本の使い方
+```{r}
+library(ggplot2)
+
+ggplot(data = iris,
+       aes(x=Sepal.Length, y=Sepal.Width))+
+  geom_point()
+```
+
+ggplot()関数の中の引数
+
+- どのデータをつかうか
+- x軸のデータを指定
+- y軸のデータを指定
+
+-----
+
+## ggThemeAssist
