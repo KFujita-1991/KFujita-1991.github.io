@@ -6,9 +6,16 @@ output:
     self_contained: no
 ---
 
-# aa
+あくまで自分向けの忘備録として、まとめておきます。
 
-## aaa
+### 変数操作系
 
-# bb
+1. gather
+1. with
+
+
+### データ可視化
+
+
+### Pythonとの連携
 
