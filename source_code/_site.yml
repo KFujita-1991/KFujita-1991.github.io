@@ -12,6 +12,7 @@ navbar:
       href: kennkyuu.html
     - text: "R忘備録"
       href: rboubi.html
+      menu:
         - text: "変数操作系"
           href: hennsuusousa.html
 output_dir: "../docs"
